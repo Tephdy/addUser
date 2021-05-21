@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark">
+
+    <div class="container my-5">
+        <div class="card bg-dark mx-auto d-block" style="box-shadow: 0 0 30px black;">
+            <div class="card-header">
+                <h1 class="card-title text-center text-primary">Add User</h1>
+            </div>
+
+            <div class="card-body">
+
+                <form id="form">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="text-white">First Name</label>
+                            <input type="text" class="form-control bg-dark text-white" id="fname">
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="text-white">Last Name</label>
+                            <input type="text" class="form-control bg-dark text-white" id="lname">
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="text-white">Middle Name</label>
+                            <input type="text" class="form-control bg-dark text-white" id="mname">
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label class="text-white">First Name</label>
+                        <input type="text" class="form-control bg-dark text-white" id="fname">
+                    </div> -->
+                    <!-- <div class="form-group">
+                        <label class="text-white">Last Name</label>
+                        <input type="text" class="form-control bg-dark text-white" id="lname">
+                    </div> -->
+
+                    <!-- <div class="form-group">
+                        <label class="text-white">Middle Name</label>
+                        <input type="text" class="form-control bg-dark text-white" id="mname">
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col">
+                            <label class="text-white">Age</label>
+                            <input type="number" class="form-control bg-dark text-white" id="age" min="1" max="100">
+                        </div>
+                        <div class="col">
+                            <label for="gender" class="text-white">Gender</label>
+                            <select id="gender" class="form-control bg-dark text-white">
+                              <option selected class="text-white">Male</option>
+                              <option class="text-white">Female</option>
+                              <option class="text-white">Others</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label class="text-white">Age</label>
+                        <input type="number" class="form-control bg-dark text-white" id="age" min="1" max="100">
+                    </div> -->
+
+                    <!-- <div class="form-group col-md-4">
+                        <label for="gender" class="text-white">Gender</label>
+                        <select id="gender" class="form-control bg-dark text-white">
+                          <option selected class="text-white">Male</option>
+                          <option class="text-white">Female</option>
+                          <option class="text-white">Others</option>
+                        </select>
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="address" class="text-white">Address</label>
+                            <input type="text" class="form-control bg-dark text-white" id="address">
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="address1" class="text-white">Address 1</label>
+                            <input type="text" class="form-control bg-dark text-white" id="address1">
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="city" class="text-white">City</label>
+                            <input type="text" class="form-control bg-dark text-white" id="city">
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="address" class="text-white">Address</label>
+                        <input type="text" class="form-control bg-dark text-white" id="address">
+                    </div> -->
+                    <!-- <div class="form-group">
+                        <label for="address1" class="text-white">Address 1</label>
+                        <input type="text" class="form-control bg-dark text-white" id="address1">
+                    </div> -->
+                    <!-- <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="city" class="text-white">City</label>
+                            <input type="text" class="form-control bg-dark text-white" id="city">
+                        </div> -->
+
+                    <div class="row">
+                        <div class="col">
+                            <label class="text-white">Province</label>
+                            <input type="text" class="form-control bg-dark text-white" id="province">
+                        </div>
+                        <div class="col">
+                            <label class="text-white">Nationality</label>
+                            <input type="text" class="form-control bg-dark text-white" id="nationality">
+                        </div>
+                    </div>
+            </div>
+
+            <!-- <div class="form-group">
+                <label class="text-white">Province</label>
+                <input type="text" class="form-control bg-dark text-white" id="province">
+            </div> -->
+
+            <!-- <div class="form-group">
+                <label class="text-white">Nationality</label>
+                <input type="text" class="form-control bg-dark text-white" id="nationality">
+            </div> -->
+
+            <div class="container">
+                <div class="mx-auto">
+                    <button type="submit" class="btn btn-primary my-3 mx-3" id="submit">Submit</button>
+
+                    <button type="reset" class="btn btn-secondary my-3 mx-3" id="reset">Reset</button>
+                </div>
+            </div>
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div class="container display-none" id="show">
+        <div class="card bg-dark mx-auto d-block css-width" style="box-shadow: 0 0 30px black;">
+            <div class="card-header bg-primary">
+                <img src="img/undraw_profile_pic_ic5t.png" alt="" class="img-fluid mx-auto d-block" style="width: 200px; height: 200px; border-radius: 50%;">
+            </div>
+
+            <div class="card-body">
+                <h1 class="text-white text-center text-capitalize .card-title" id="fullName"></h1>
+
+                <h4 class="card-text text-white my-4">Additional Info:</h4>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 mx-auto">
+                            <p class="text-primary">Age: <span id="Uage" style="font-size: 24px;" class="text-white"></span> <small class="text-white">yrs. old</small></p>
+                        </div>
+                        <div class="col-sm-6 mx-auto">
+                            <p class="text-primary">Gender: <span id="Ugender" style="font-size: 24px;" class="text-white"></span></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="text-primary">Address: <span id="Uaddress" style="font-size: 24px;" class="text-white"></span></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="text-primary">Address1: <span id="Uaddress1" style="font-size: 24px;" class="text-white"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="text-primary">City: <span id="Ucity" style="font-size: 24px;" class="text-white"></span></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="text-primary">Province: <span id="Uprovince" style="font-size: 24px;" class="text-white"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="text-primary">Nationality: <span id="Unationality" style="font-size: 24px;" class="text-white"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="addUser.js"></script>
+</body>
+
+</html>
