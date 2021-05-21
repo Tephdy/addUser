@@ -1,0 +1,15 @@
+.display-none {
+    display: none;
+}
+
+.css-width {
+    max-width: 50%;
+    width: 50%;
+}
+
+@media(max-width:700px) {
+    .css-width {
+        max-width: 100%;
+        width: 100%;
+    }
+}
